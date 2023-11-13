@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hostel</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/stylesheets/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/stylesheets/adminlte.min.css">
+</head>
+<body style="  background: url('/images/2.jpg') no-repeat center center fixed;" >
+
+ 
+    <section class="content-header" style="height: 200px;">
+
+    </section>
+      <div class="row d-flex justify-content-center">
+        
+
+
+
+      
+        
+          <!-- left column -->
+          <div class="col-md-4 " >
+
+
+
+<% if(typeof alert !='undefined') {%>
+  <% alert.forEach(function(error) {%>
+
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <%= error.msg %>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <% }) %>
+            <% } %>
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">OTP</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              
+              <form method="post" action="/admin/stu/code">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="exampleInputID">code</label>
+                        <input type="text" class="form-control" id="name" name="code">
+                    </div>
+                 
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                      
+                    </div>
+                    
+                </div>
+              
+        </form>
+      </div>
+         
+      
+        </div>
+    
+</div>
+
+
+</body>
+</html>
